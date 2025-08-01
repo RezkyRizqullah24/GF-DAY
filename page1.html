@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy GF Day!!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="backsound" autoplay loop>
+      <source src="./assets/backsound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- PAGE 1 -->
+    <div class="page" id="page1">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/love.png" />
+            <h3 class="judul">HAPPY NATIONAL GIRLFRIEND DAY</h3>
+            <p>(1 Agustus 2025)</p>
+            <p>klikk nextt sayangg( ʵ •̀ ᴗ - ʵ ) ✧</p>
+            <button class="btnNext btn-color-1" onclick="showPage('page2')">
+              nextt
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page" id="page2" style="display: none">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/amplop.png" class="amplop" />
+            <p>Mauu dibukaa gaaa?</p>
+            <div class="button-group">
+              <button class="btnNext btn-color-1" onclick="showPage('page3')">
+                bukaa
+              </button>
+              <button class="btnNext btn-color-2" onclick="showPage('page4')">
+                gaaa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page" id="page3" style="display: none">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/foto1.jpeg" class="amplop foto" />
+               <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              
+            <h3>To My Loveee</h3>
+              <h4>Hi sayanggg, it's for you💗 </h4>
+                <h4>*HAPPY NATIONAL GIRLFRIEND DAY CANTIKKU*</h4>
+            <p>aku mauu bilang akuu bersyukur banget punya kamu, kamu orang baik yg selalu sabar ngadepin segala hal🥺🫶🏻, kamu yg selalu 
+              coba ngertiin keadaan akuu, padahal belakangan inii akuu sukaa egoiss dan gaa mikirinn perasaann kamuu...kamu selaluu mauu dengerin apapun itu 
+              dari akuu dan mauu nerimaa akuu apaa adanyaa...</p>
+              <p>maafinn aku selalu buat masalah☹️, maaf bangett gara2 aku jadi sering berantem🫂🥀, tapi apapun yg terjadi kita selesain 
+                bareng bareng yahh? aku udah bersyukur dengan apa yg kamu kasih ke aku tapi aku selalu buat kamu kecewa☹️, 
+                i love you so muchhh🤍, aku sayang, aku cintaaa bangett sama kamu, jangan tinggalin aku yahh?</p>
+                <p>you are the greatest, best, prettiest, cutest, patient, strongest woman I've ever met, thanks for everything sayangg, 
+                  once again  I LOVE U LOVE U LOVE U LOVE U LOVE U  LOVE U LOVE U LOVE U LOVE U LOVE E  LOVE U SO MUCH AND FOREVER
+                  🤍🤍🤍🤍🖤🖤🖤🖤💗💗💗💗💞💞💞💞💐💐💐💐🌷🌷🌷🌷🌹🌹🌹🌹⚘️⚘️⚘️⚘️</p>  
+          </div>
+        </div>
+               </div>
+        <div class="button-group">
+              <button class="btnNext btn-color-1" onclick="showPage('page1')">
+                ulangg?
+              </button>
+            </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page" id="page4" style="display: none">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/sedih.png" class="amplop" />
+            <p>Yahhh......Ulang lagii yaaaa, plisss?T_T</p>
+            <div class="button-group">
+              <button class="btnNext btn-color-1" onclick="showPage('page2')">
+                Lagiii?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPage(id) {
+        document.querySelectorAll(".page").forEach((page) => {
+          page.style.display = "none";
+        });
+        document.getElementById(id).style.display = "block";
+      }
+const audio = document.getElementById("backsound");
+  audio.volume = 0.1; 
+      // Unmute audio after any user click
+      document.body.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("backsound");
+          if (audio.muted) {
+            audio.muted = false;
+            audio.play();
+            
+          }
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>

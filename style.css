@@ -1,0 +1,210 @@
+body {
+    background: #ffc0cb;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-family: Playwrite AU QLD;
+}
+
+
+body.fade-out {
+  opacity: 0;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 2;
+  background: rgb(255, 246, 246);
+  border-radius: 2rem;
+  border: rgb(252, 108, 108) 0.1rem dashed;
+  text-align: center;
+  min-height: 200px;
+  display: flex;             
+  flex-direction: column;    
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.judul{
+    color: rgb(252, 108, 108);
+    text-shadow: 0 0 8px #ff69b4; /* pink glow */
+}
+.btnNext {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-color-1 {
+  background-color: #ff69b4; /* hot pink */
+  color: white;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+.btn-color-1:hover {
+  background-color: #ff85c1;
+  box-shadow: 0 0 20px #ff69b4, 0 0 40px #ff69b4;
+  transform: scale(1.05);
+}
+
+.btn-color-2 {
+  background-color: #6aeea1; /* hot pink */
+  color: white;
+  box-shadow: 0 0 10px #616161;
+}
+
+.btn-color-2:hover {
+  background-color: #77ffaf;
+  box-shadow: 0 0 20px #6aeea1, 0 0 40px #6aeea1;
+  transform: scale(1.05);
+}
+
+.amplop {
+    width: 400px;
+    height: auto;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Jarak antar tombol */
+  margin-top: 1rem;
+}
+img {
+    border-radius: 1rem;
+}
+
+.foto {
+    border: rgb(252, 108, 108) 0.1rem dashed;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    #home {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #home,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+    .form-control {
+      width: 420px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #home {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+    .form-control {
+      width: 300px;
+    }
+  }
