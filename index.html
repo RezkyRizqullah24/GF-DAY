@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <audio id="backsound" autoplay loop>
+    <audio id="backsound" autoplay loop muted>
       <source src="assets/backsound.mp3" type="audio/mpeg" />
     </audio>
 
@@ -113,19 +113,16 @@
       }
 const audio = document.getElementById("backsound");
   audio.volume = 0.1; 
+  
       // Unmute audio after any user click
-      document.body.addEventListener(
-        "click",
-        () => {
-          const audio = document.getElementById("backsound");
-          if (audio.muted) {
-            audio.muted = false;
-            audio.play();
-            
-          }
-        },
-        { once: true }
-      );
+        window.addEventListener('click', () => {
+    const audio = document.getElementById('backsound');
+    if (audio.muted) {
+      audio.muted = false;
+      audio.play();
+    }
+  }, { once: true });
+</script>
     </script>
   </body>
 </html>
